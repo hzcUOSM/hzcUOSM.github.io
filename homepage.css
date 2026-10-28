@@ -1,0 +1,82 @@
+body{
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.title{
+    font-size: 500%;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+hr{
+    border: 0;
+    border-top: 5px solid black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    font-size: 125%;
+    display: flex;
+    justify-content: center;
+    padding: 0.2%;
+}
+.nav-bar li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 5px 30px;
+    font-weight: bold;
+}
+.nav-bar li+li{
+    border-left: 1px solid grey;
+}
+.nav-bar li a:hover{
+    background-color: rgb(226, 226, 226);
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.cards{
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.cards img{
+    display: block;
+    padding: 5px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+.cards-body{
+    padding: 5px;
+}
+.cards-body p{
+    color: grey;
+}
+.side .cards-body h3{
+    font-size: 0.9;
+}
+.middle .cards-body h3{
+    font-size: 1.4;
+}
+.middle .cards-body p{
+    font-size: 0.95;
+}
+@media (max-width: 768px){
+    .content {grid-template-columns: 1fr;}
+    .title {font-size: 2rem;}
+    .nav-bar li a{font-size: 1rem; padding: 5px 10px;}
+    hr {border-top: 2px solid black;}
+}
