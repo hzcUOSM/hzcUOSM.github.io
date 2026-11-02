@@ -144,6 +144,6 @@ hr{
     }
     .content-anime-title h3{
         grid-column: span 2;
-        font-size: 50%
+        font-size: 100%
     }
 }
