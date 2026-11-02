@@ -144,5 +144,6 @@ hr{
     }
     .content-anime-title {
         grid-column: span 2;
+        font-size: 250%
     }
 }
