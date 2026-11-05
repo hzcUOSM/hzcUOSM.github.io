@@ -241,11 +241,7 @@ span{
         grid-template-columns: 1fr
     }
     .article-sections:has(+.article-sections){
-    border-bottom: 2px solid grey;
     border-right: none;
-    }
-    .article-sections.short{
-        border-bottom: none;
     }
     .article-sections.long{
     display: grid;
@@ -282,11 +278,7 @@ span{
         grid-template-columns: 1fr;
     }
     .article-sections:has(+.article-sections){
-    border-bottom: 2px solid grey;
     border-right: none;
-    }
-    .article-sections.short{
-        border-bottom: none;
     }
     .article-sections.long{
     display: grid;
